@@ -147,8 +147,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import './../../styles/utils/_index.scss';
-
 .bio__content__title {
   font-size: 10rem;
   line-height: 1.4em;

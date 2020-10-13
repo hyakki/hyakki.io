@@ -18,8 +18,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import './../../styles/utils/_index.scss';
-
 [class*='hero--'],
 .hero {
   width: 100%;

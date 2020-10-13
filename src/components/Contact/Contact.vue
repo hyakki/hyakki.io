@@ -32,8 +32,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import './../../styles/utils/_index.scss';
-
 .contact-inner {
   display: flex;
   justify-content: flex-end;

@@ -87,8 +87,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import './../../styles/utils/_index.scss';
-
 .sphere {
   display: flex;
   justify-content: center;

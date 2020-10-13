@@ -1,14 +1,12 @@
 <template>
   <div :class="`app--${theme.color.value}`">
+    <div class="app__bg"></div>
     <Sphere class="app__sphere" v-if="false" />
     <Hero class="app__hero" v-if="true" />
     <Bio class="app__bio" v-if="true" />
     <Projects class="app__projects" v-if="true" />
     <Contact class="app__contact" v-if="true" />
-  </div>
-</template>
-
-<script lang="ts">
+  </div> </template> <script lang="ts">
 import aladino from './scripts/aladino'
 import { onMounted } from 'vue'
 
@@ -42,8 +40,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import './styles/utils/_index.scss';
-
 [class*='app--'],
 .app {
   background-color: $c-white;
@@ -54,6 +50,17 @@ export default {
     background-color: $c-black;
     color: $c-white;
   }
+}
+
+.app__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('~@/assets/pattern/dots.svg');
+  background-size: 6px;
+  opacity: 0.15;
 }
 
 .app__sphere {
